@@ -78,19 +78,19 @@ logging = logging.getLogger()
 
 
 bot = Client("bot",
-             bot_token=os.environ.get("BOT_TOKEN"),
-             api_id=int(os.environ.get("API_ID")),
-             api_hash=os.environ.get("API_HASH"))
-auth_users = [6693536228,1511103739,5684410709,6034357260,6488555238]
-sudo_users = auth_users
-sudo_groups = [-1002065091813]
+             bot_token=os.environ.get("7143293335:AAEwAvxY4q77BlZSCv3fHKSZETkT_pegoMQ"),
+             api_id=int(os.environ.get("22114233")),
+             api_hash=os.environ.get("d7abcec5c967414fadb1d438fa05ebea"))
+auth_users = [1403488629,1511103739,5684410709,6034357260,6488555238]
+sudo_users = 1403488629
+sudo_groups = [-1002071056682]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
     if user_id in sudo_users:
         return True
     return False
-@bot.on_message(filters.command(["shell"]))
+@bot.on_message(filters.command(["start"]))
 async def shell(client, message: Message):
     """
     Executes terminal commands via bot.
@@ -142,13 +142,13 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command(["pyro"]))
+@bot.on_message(filters.command(["om"]))
 async def account_login(bot: Client, m: Message):
 
  editable = await m.reply_text("**Hi Press**\n**Text** = /pro_txt\n**Top** = /pro_top\n**Vision** = /pro_vision\n**Jw** = /pro_jw\n**Olive** = /pro_olive\n**Addapdf** = /adda_pdf")
 
 
-@bot.on_message(filters.command(["cancel"]))
+@bot.on_message(filters.command(["stop"]))
 async def cancel(_, m):
     editable = await m.reply_text("Canceling All process Plz wait\n🚦🚦 Last Process Stopped 🚦🚦")
     global cancel
@@ -163,7 +163,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["pro_txt"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -490,7 +490,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done")
 
 
-@bot.on_message(filters.command(["pro_top"]))
+@bot.on_message(filters.command(["top"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -573,7 +573,7 @@ async def account_login(bot: Client, m: Message):
         await m.reply_text(str(e))
     await m.reply_text("Done")
 
-@bot.on_message(filters.command(["pro_vision"]))
+@bot.on_message(filters.command(["pro"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -658,7 +658,7 @@ async def account_login(bot: Client, m: Message):
         await m.reply_text(str(e))
     await m.reply_text("Done")
 
-@bot.on_message(filters.command(["adda_pdf"]))
+@bot.on_message(filters.command(["adda"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -740,7 +740,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-@bot.on_message(filters.command(["pro_olive"]))
+@bot.on_message(filters.command(["sam"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -826,7 +826,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done")
 
 
-@bot.on_message(filters.command(["pro_jw"]))
+@bot.on_message(filters.command(["jw"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -1007,7 +1007,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done")
 
 
-@bot.on_message(filters.command(["top"]))
+@bot.on_message(filters.command(["sim"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
