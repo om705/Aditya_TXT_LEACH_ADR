@@ -102,7 +102,7 @@ async def shell(client, message: Message):
     if len(message.command) < 2:
         return await message.reply_text(shell_usage, quote=True)
 
-    user_input = message.text.split(None, 1)[1].split(" ")
+    user_input = message.text.split(None, 1)[1].split("1")
 
     try:
         shell = subprocess.Popen(
