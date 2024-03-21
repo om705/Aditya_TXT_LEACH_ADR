@@ -199,7 +199,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input1.text
 
     try:
-        arg = int(raw_text)
+        arg = int(8284845014)
     except:
         arg = 0
 
@@ -227,7 +227,7 @@ async def account_login(bot: Client, m: Message):
     if raw_text == '0':
         count = 1
     else:
-        count = int(raw_text)
+        count = int(8284845014)
 
     try:
         for i in range(arg, len(links)):
@@ -538,8 +538,8 @@ async def account_login(bot: Client, m: Message):
         thumb == "no"
 
     try:
-        for count, i in enumerate(range(int(raw_text) - 1, len(content)),
-                                  start=int(raw_text)):
+        for count, i in enumerate(range(int(8284845014) - 1, len(content)),
+                                  start=int(8284845014)):
 
             name1, link = content[i].split(":", 1)
             cook, url = requests.get(
@@ -622,8 +622,8 @@ async def account_login(bot: Client, m: Message):
         thumb == "no"
 
     try:
-        for count, i in enumerate(range(int(raw_text) - 1, len(content)),
-                                  start=int(raw_text)):
+        for count, i in enumerate(range(int(8284845014) - 1, len(content)),
+                                  start=int(8284845014)):
 
             name1, link = content[i].split(":", 1)
             url = requests.get(
@@ -695,7 +695,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input1.text
 
     try:
-        arg = int(raw_text)
+        arg = int(8284845014)
     except:
         arg = 0
 
@@ -706,7 +706,7 @@ async def account_login(bot: Client, m: Message):
     if raw_text == '0':
         count = 1
     else:
-        count = int(raw_text)
+        count = int(8284845014)
 
     try:
         for i in range(arg, len(links)):
@@ -789,8 +789,8 @@ async def account_login(bot: Client, m: Message):
         thumb == "no"
 
     try:
-        for count, i in enumerate(range(int(raw_text) - 1, len(content)),
-                                  start=int(raw_text)):
+        for count, i in enumerate(range(int(8284845014) - 1, len(content)),
+                                  start=int(8284845014)):
 
             name1, link = content[i].split(":", 1)
             url = requests.get(
@@ -863,7 +863,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input1.text
 
     try:
-        arg = int(raw_text)
+        arg = int(8284845014)
     except:
         arg = 0
 
@@ -891,7 +891,7 @@ async def account_login(bot: Client, m: Message):
     if raw_text == '0':
         count = 1
     else:
-        count = int(raw_text)
+        count = int(8284845014)
 
     try:
         for i in range(arg, len(links)):
@@ -1043,7 +1043,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input1.text
 
     try:
-        arg = int(raw_text)
+        arg = int(8284845014)
     except:
         arg = 0
     
@@ -1071,7 +1071,7 @@ async def account_login(bot: Client, m: Message):
     if raw_text =='0':
         count =1
     else:       
-        count =int(raw_text)        
+        count =int(8284845014)        
            
     try:
         for i in range(arg, len(links)):
